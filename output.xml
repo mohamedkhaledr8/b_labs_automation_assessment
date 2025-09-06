@@ -1,0 +1,3296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.11.2 on darwin)" generated="2025-09-06T20:06:13.109406" rpa="false" schemaversion="5">
+<suite id="s1" name="B Labs Automation Assessment" source="/Users/ios/PycharmProjects/b_labs_automation_assessment">
+<suite id="s1-s1" name="Tests" source="/Users/ios/PycharmProjects/b_labs_automation_assessment/tests">
+<kw name="Setup Suite" type="SETUP">
+<kw name="Load Config As Global" owner="LoadConfig">
+<kw name="Read All Yaml From Folder" owner="yaml_reader">
+<msg time="2025-09-06T20:06:13.462442" level="INFO">${config} = {'element_visibility': 5, 'retry_keyword_number': '10x', 'retry_interval': '2s', 'browser': 'chrome', 'url': 'https://btech.com/en/'}</msg>
+<var>${config}</var>
+<arg>config</arg>
+<status status="PASS" start="2025-09-06T20:06:13.459315" elapsed="0.003191"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-09-06T20:06:13.464379" level="INFO">${element_visibility} = 5</msg>
+<arg>${${key}}</arg>
+<arg>${value}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-09-06T20:06:13.463128" elapsed="0.001471"/>
+</kw>
+<var name="${key}">element_visibility</var>
+<var name="${value}">5</var>
+<status status="PASS" start="2025-09-06T20:06:13.462954" elapsed="0.001765"/>
+</iter>
+<iter>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-09-06T20:06:13.465917" level="INFO">${retry_keyword_number} = 10x</msg>
+<arg>${${key}}</arg>
+<arg>${value}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-09-06T20:06:13.465117" elapsed="0.000864"/>
+</kw>
+<var name="${key}">retry_keyword_number</var>
+<var name="${value}">10x</var>
+<status status="PASS" start="2025-09-06T20:06:13.464916" elapsed="0.001137"/>
+</iter>
+<iter>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-09-06T20:06:13.467006" level="INFO">${retry_interval} = 2s</msg>
+<arg>${${key}}</arg>
+<arg>${value}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-09-06T20:06:13.466312" elapsed="0.000770"/>
+</kw>
+<var name="${key}">retry_interval</var>
+<var name="${value}">2s</var>
+<status status="PASS" start="2025-09-06T20:06:13.466189" elapsed="0.000958"/>
+</iter>
+<iter>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-09-06T20:06:13.468221" level="INFO">${browser} = chrome</msg>
+<arg>${${key}}</arg>
+<arg>${value}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-09-06T20:06:13.467413" elapsed="0.000889"/>
+</kw>
+<var name="${key}">browser</var>
+<var name="${value}">chrome</var>
+<status status="PASS" start="2025-09-06T20:06:13.467285" elapsed="0.001092"/>
+</iter>
+<iter>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-09-06T20:06:13.469456" level="INFO">${url} = https://btech.com/en/</msg>
+<arg>${${key}}</arg>
+<arg>${value}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-09-06T20:06:13.468665" elapsed="0.000868"/>
+</kw>
+<var name="${key}">url</var>
+<var name="${value}">https://btech.com/en/</var>
+<status status="PASS" start="2025-09-06T20:06:13.468519" elapsed="0.001132"/>
+</iter>
+<var>${key}</var>
+<var>${value}</var>
+<value>&amp;{config}</value>
+<status status="PASS" start="2025-09-06T20:06:13.462642" elapsed="0.007088"/>
+</for>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-09-06T20:06:13.470779" level="INFO">&amp;{CONFIG} = { element_visibility=5 | retry_keyword_number=10x | retry_interval=2s | browser=chrome | url=https://btech.com/en/ }</msg>
+<arg>&amp;{CONFIG}</arg>
+<arg>&amp;{config}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-09-06T20:06:13.470105" elapsed="0.000750"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:06:13.435612" elapsed="0.035348"/>
+</kw>
+<kw name="Load Test Data As Global" owner="loadTestData">
+<kw name="Read All Yaml From Folder" owner="yaml_reader">
+<msg time="2025-09-06T20:06:13.473778" level="INFO">${testdata} = {'product_name': 'Iphone 16'}</msg>
+<var>${testdata}</var>
+<arg>testdata</arg>
+<status status="PASS" start="2025-09-06T20:06:13.471438" elapsed="0.002481"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-09-06T20:06:13.475601" level="INFO">${product_name} = Iphone 16</msg>
+<arg>${${key}}</arg>
+<arg>${value}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-09-06T20:06:13.474685" elapsed="0.000980"/>
+</kw>
+<var name="${key}">product_name</var>
+<var name="${value}">Iphone 16</var>
+<status status="PASS" start="2025-09-06T20:06:13.474509" elapsed="0.001213"/>
+</iter>
+<var>${key}</var>
+<var>${value}</var>
+<value>&amp;{testdata}</value>
+<status status="PASS" start="2025-09-06T20:06:13.474201" elapsed="0.001584"/>
+</for>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-09-06T20:06:13.476247" level="INFO">&amp;{TESTDATA} = { product_name=Iphone 16 }</msg>
+<arg>&amp;{TESTDATA}</arg>
+<arg>&amp;{testdata}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-09-06T20:06:13.475934" elapsed="0.000370"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:06:13.471192" elapsed="0.005203"/>
+</kw>
+<kw name="Open Browser And Go To URL" owner="BrowserConfig">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Opening browser: ${browser} and URL: ${url}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-06T20:06:13.476781" elapsed="0.000257"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:06:13.477473" level="INFO">Opening browser 'chrome' to base url 'https://btech.com/en/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-06T20:06:13.477207" elapsed="3.330503"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-06T20:06:16.812752" elapsed="12.563881"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:06:13.476570" elapsed="15.900929"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:06:13.435112" elapsed="15.942965"/>
+</kw>
+<suite id="s1-s1-s1" name="Ui" source="/Users/ios/PycharmProjects/b_labs_automation_assessment/tests/ui">
+<suite id="s1-s1-s1-s1" name="Btech Search And Cart" source="/Users/ios/PycharmProjects/b_labs_automation_assessment/tests/ui/btech_search_and_cart.robot">
+<test id="s1-s1-s1-s1-t1" name="Search For Product And Add It To Cart" line="5">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Search For Product" owner="btech_keywords">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>searching for product: ${product_name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-06T20:06:29.464093" elapsed="0.006269"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SEARCH_BOX}</arg>
+<arg>${element_visibility}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-06T20:06:29.470907" elapsed="0.071438"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:06:29.543548" level="INFO">Typing text 'Iphone 16' into text field 'id=search'.</msg>
+<arg>${SEARCH_BOX}</arg>
+<arg>${product_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:06:29.542797" elapsed="0.218068"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:06:29.761403" level="INFO">Clicking button 'xpath=//div[@class="actions"]/button[@type="submit"]'.</msg>
+<arg>${SEARCH_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:06:29.761100" elapsed="0.097940"/>
+</kw>
+<arg>${product_name}</arg>
+<status status="PASS" start="2025-09-06T20:06:29.463117" elapsed="0.396255"/>
+</kw>
+<arg>${retry_keyword_number}</arg>
+<arg>${retry_interval}</arg>
+<arg>Search For Product</arg>
+<arg>${product_name}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-09-06T20:06:29.462407" elapsed="0.397428"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Select First Search Result" owner="btech_keywords">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>selecting first result</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-06T20:06:29.861297" elapsed="0.000176"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${RESULT_LIST}</arg>
+<arg>${element_visibility}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-06T20:06:29.861613" elapsed="7.770569"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-09-06T20:06:37.632735" level="INFO">${count} = 0</msg>
+<var>${count}</var>
+<arg>0</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-09-06T20:06:37.632451" elapsed="0.000332"/>
+</kw>
+<while condition="${count} &lt;= 1">
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:06:37.645002" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:06:37.633418" elapsed="0.011645"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:06:37.645457" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:06:37.645549" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:06:37.645262" elapsed="0.000318"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:06:38.646776" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:06:37.645703" elapsed="1.001421"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:06:37.632912" elapsed="1.014346"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:06:38.660977" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:06:38.647894" elapsed="0.013161"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:06:38.661461" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:06:38.661563" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:06:38.661265" elapsed="0.000331"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:06:39.663290" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:06:38.661724" elapsed="1.001838"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:06:38.647375" elapsed="1.016317"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:06:39.675100" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:06:39.664303" elapsed="0.010861"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:06:39.675581" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:06:39.675678" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:06:39.675376" elapsed="0.000335"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:06:40.676833" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:06:39.675849" elapsed="1.001248"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:06:39.663793" elapsed="1.013430"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:06:40.689845" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:06:40.677847" elapsed="0.012062"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:06:40.690324" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:06:40.690422" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:06:40.690123" elapsed="0.000331"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:06:41.692093" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:06:40.690588" elapsed="1.001713"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:06:40.677308" elapsed="1.015115"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:06:41.702839" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:06:41.693027" elapsed="0.009875"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:06:41.703302" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:06:41.703402" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:06:41.703116" elapsed="0.000352"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:06:42.704206" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:06:41.703636" elapsed="1.000759"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:06:41.692509" elapsed="1.012008"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:06:42.716141" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:06:42.705110" elapsed="0.011100"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:06:42.716627" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:06:42.716839" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:06:42.716422" elapsed="0.000456"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:06:43.717600" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:06:42.717027" elapsed="1.000823"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:06:42.704602" elapsed="1.013370"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:06:43.733212" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:06:43.718561" elapsed="0.014722"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:06:43.733672" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:06:43.733761" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:06:43.733481" elapsed="0.000312"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:06:44.734315" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:06:43.733913" elapsed="1.000593"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:06:43.718058" elapsed="1.016571"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:06:44.750805" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:06:44.735250" elapsed="0.015646"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:06:44.751488" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:06:44.751648" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:06:44.751161" elapsed="0.000540"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:06:45.753350" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:06:44.751904" elapsed="1.001856"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:06:44.734716" elapsed="1.019288"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:06:45.769475" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:06:45.755232" elapsed="0.014309"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:06:45.769951" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:06:45.770048" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:06:45.769757" elapsed="0.000332"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:06:46.772668" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:06:45.770210" elapsed="1.002921"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:06:45.754151" elapsed="1.019137"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:06:46.804058" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:06:46.774048" elapsed="0.030226"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:06:46.806648" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:06:46.806997" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:06:46.806001" elapsed="0.001103"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:06:47.808234" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:06:46.807492" elapsed="1.001080"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:06:46.773389" elapsed="1.035348"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:06:47.827728" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:06:47.809364" elapsed="0.018455"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:06:47.828307" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:06:47.828494" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:06:47.828064" elapsed="0.000513"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:06:48.831039" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:06:47.829047" elapsed="1.002253"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:06:47.808837" elapsed="1.022679"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:06:48.847818" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:06:48.832314" elapsed="0.015691"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:06:48.848584" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:06:48.848717" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:06:48.848310" elapsed="0.000444"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:06:49.849384" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:06:48.848983" elapsed="1.000748"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:06:48.831661" elapsed="1.018278"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:06:49.867527" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:06:49.851066" elapsed="0.016753"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:06:49.869288" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:06:49.869613" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:06:49.868213" elapsed="0.001497"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:06:50.873062" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:06:49.870080" elapsed="1.003170"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:06:49.850367" elapsed="1.023010"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:06:50.900734" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:06:50.874817" elapsed="0.026042"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:06:50.901450" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:06:50.901631" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:06:50.901141" elapsed="0.000555"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:06:51.903721" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:06:50.901983" elapsed="1.001928"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:06:50.873509" elapsed="1.030561"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:06:51.933394" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:06:51.904984" elapsed="0.028569"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:06:51.935834" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:06:51.936229" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:06:51.934585" elapsed="0.001725"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:06:52.938645" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:06:51.936959" elapsed="1.001849"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:06:51.904148" elapsed="1.034751"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:06:52.959134" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:06:52.939371" elapsed="0.019913"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:06:52.960024" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:06:52.960195" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:06:52.959683" elapsed="0.000574"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:06:53.961998" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:06:52.960594" elapsed="1.001558"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:06:52.938955" elapsed="1.023286"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:06:53.975728" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:06:53.962669" elapsed="0.013118"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:06:53.976150" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:06:53.976247" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:06:53.975976" elapsed="0.000302"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:06:54.976917" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:06:53.976411" elapsed="1.000862"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:06:53.962298" elapsed="1.015131"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:06:55.004259" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:06:54.978329" elapsed="0.026123"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:06:55.006025" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:06:55.006257" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:06:55.005545" elapsed="0.000771"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:06:56.007516" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:06:55.006726" elapsed="1.000945"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:06:54.977508" elapsed="1.030251"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:06:56.028596" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:06:56.008173" elapsed="0.020744"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:06:56.029651" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:06:56.029965" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:06:56.029317" elapsed="0.000712"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:06:57.032360" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:06:56.030622" elapsed="1.002213"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:06:56.007815" elapsed="1.025374"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:06:57.060422" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:06:57.034328" elapsed="0.026187"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:06:57.061054" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:06:57.061190" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:06:57.060785" elapsed="0.000457"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:06:58.063239" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:06:57.061554" elapsed="1.001841"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:06:57.033291" elapsed="1.030200"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:06:58.089375" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:06:58.063914" elapsed="0.025660"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:06:58.091390" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:06:58.091532" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:06:58.091067" elapsed="0.000508"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:06:59.092713" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:06:58.091921" elapsed="1.000989"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:06:58.063548" elapsed="1.029480"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:06:59.123877" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:06:59.093555" elapsed="0.030466"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:06:59.124626" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:06:59.124816" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:06:59.124361" elapsed="0.000554"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:00.127641" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:06:59.125398" elapsed="1.002881"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:06:59.093104" elapsed="1.035366"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:00.160356" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:00.130671" elapsed="0.029950"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:00.162868" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:00.163337" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:00.161867" elapsed="0.002122"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:01.166521" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:00.165502" elapsed="1.001330"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:00.128721" elapsed="1.038299"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:01.194953" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:01.167920" elapsed="0.027146"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:01.196066" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:01.196258" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:01.195661" elapsed="0.000676"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:02.198326" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:01.197250" elapsed="1.001357"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:01.167128" elapsed="1.031626"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:02.210768" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:02.199311" elapsed="0.011527"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:02.211265" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:02.211371" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:02.211054" elapsed="0.000351"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:03.213335" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:02.211645" elapsed="1.001881"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:02.198832" elapsed="1.014818"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:03.225897" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:03.214380" elapsed="0.011581"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:03.226364" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:03.226455" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:03.226172" elapsed="0.000315"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:04.228855" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:03.226625" elapsed="1.002486"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:03.213868" elapsed="1.015367"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:04.241462" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:04.229799" elapsed="0.011728"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:04.241921" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:04.242036" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:04.241735" elapsed="0.000337"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:05.244212" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:04.242212" elapsed="1.002202"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:04.229313" elapsed="1.015224"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:05.257825" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:05.245098" elapsed="0.012791"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:05.258287" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:05.258377" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:05.258095" elapsed="0.000314"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:06.261182" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:05.258535" elapsed="1.002913"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:05.244614" elapsed="1.016962"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:06.274294" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:06.262165" elapsed="0.012192"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:06.274779" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:06.274871" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:06.274571" elapsed="0.000333"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:07.276143" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:06.275031" elapsed="1.001525"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:06.261655" elapsed="1.015039"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:07.286044" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:07.277211" elapsed="0.008911"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:07.286523" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:07.286622" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:07.286333" elapsed="0.000319"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:08.288009" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:07.286766" elapsed="1.001496"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:07.276758" elapsed="1.011626"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:08.300075" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:08.288945" elapsed="0.011198"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:08.300600" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:08.300698" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:08.300400" elapsed="0.000333"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:09.302612" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:08.300877" elapsed="1.001970"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:08.288462" elapsed="1.014486"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:09.314873" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:09.303384" elapsed="0.011548"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:09.315304" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:09.315507" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:09.315129" elapsed="0.000411"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:10.316175" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:09.315664" elapsed="1.000703"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:09.303007" elapsed="1.013483"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:10.329358" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:10.317071" elapsed="0.012353"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:10.329827" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:10.329974" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:10.329636" elapsed="0.000395"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:11.334757" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:10.330173" elapsed="1.004802"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:10.316571" elapsed="1.018521"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:11.347051" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:11.335621" elapsed="0.011490"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:11.348172" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:11.348434" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:11.347632" elapsed="0.000874"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:12.351825" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:11.348807" elapsed="1.003198"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:11.335158" elapsed="1.016938"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:12.363626" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:12.352517" elapsed="0.011176"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:12.364107" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:12.364197" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:12.363918" elapsed="0.000311"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:13.367190" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:12.364357" elapsed="1.003070"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:12.352153" elapsed="1.015397"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:13.379728" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:13.368148" elapsed="0.011645"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:13.380207" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:13.380302" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:13.380010" elapsed="0.000325"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:14.382585" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:13.380478" elapsed="1.002399"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:13.367630" elapsed="1.015381"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:14.399237" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:14.383597" elapsed="0.015838"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:14.402240" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:14.402477" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:14.401693" elapsed="0.000830"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:15.405530" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:14.403095" elapsed="1.002627"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:14.383095" elapsed="1.022753"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:15.418609" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:15.406463" elapsed="0.012209"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:15.419063" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:15.419160" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:15.418870" elapsed="0.000323"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:16.419865" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:15.419317" elapsed="1.000781"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:15.405929" elapsed="1.014262"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:16.435469" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:16.420889" elapsed="0.014639"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:16.435902" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:16.435985" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:16.435726" elapsed="0.000288"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:17.437067" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:16.436130" elapsed="1.001131"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:16.420344" elapsed="1.017040"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:17.449468" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:17.437960" elapsed="0.011599"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:17.450129" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:17.450289" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:17.449851" elapsed="0.000495"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:18.452771" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:17.450570" elapsed="1.002469"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:17.437465" elapsed="1.015762"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:18.465946" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:18.454576" elapsed="0.011463"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:18.466483" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:18.466579" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:18.466278" elapsed="0.000334"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:19.467843" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:18.466743" elapsed="1.001350"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:18.453357" elapsed="1.015448"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:19.490722" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:19.469570" elapsed="0.021258"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:19.491434" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:19.491695" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:19.491137" elapsed="0.000626"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:20.493141" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:19.492192" elapsed="1.001869"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:19.468977" elapsed="1.025375"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:20.514951" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:20.497675" elapsed="0.017419"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:20.515859" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:20.516042" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:20.515484" elapsed="0.000629"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:21.517535" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:20.516361" elapsed="1.001368"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:20.496573" elapsed="1.021286"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:21.548749" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:21.518638" elapsed="0.030179"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:21.549232" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:21.549323" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:21.549030" elapsed="0.000325"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:22.550362" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:21.549484" elapsed="1.001126"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:21.517939" elapsed="1.032797"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:22.591987" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:22.551329" elapsed="0.040726"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:22.592476" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:22.592842" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:22.592279" elapsed="0.000601"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:23.595847" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:22.593023" elapsed="1.003057"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:22.550815" elapsed="1.045392"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:23.641382" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:23.596793" elapsed="0.044683"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:23.642066" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:23.642217" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:23.641777" elapsed="0.000495"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:24.642990" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:23.642467" elapsed="1.000716"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:23.596287" elapsed="1.047024"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:24.656243" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:24.643893" elapsed="0.012415"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:24.656742" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:24.656837" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:24.656537" elapsed="0.000333"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:25.657584" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:24.657014" elapsed="1.000770"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:24.643391" elapsed="1.014516"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:25.701982" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:25.658491" elapsed="0.043559"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:25.702481" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:25.702582" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:25.702279" elapsed="0.000338"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:26.703105" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:25.702759" elapsed="1.000608"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:25.657987" elapsed="1.045527"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:26.750515" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:26.704172" elapsed="0.046426"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:26.751072" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:26.751163" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:26.750878" elapsed="0.000315"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:27.752514" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:26.751314" elapsed="1.001445"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:26.703613" elapsed="1.049274"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:27.798296" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:27.753611" elapsed="0.044753"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:27.798959" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:27.799065" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:27.798734" elapsed="0.000364"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:28.799747" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:27.799254" elapsed="1.000832"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:27.752951" elapsed="1.047284"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:28.820755" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:28.804304" elapsed="0.016521"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:28.821236" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:28.821327" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:28.821047" elapsed="0.000313"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:29.822192" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:28.821493" elapsed="1.000868"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:28.800336" elapsed="1.022152"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:29.876239" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:29.823310" elapsed="0.053754"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:29.879258" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:29.881580" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:29.877897" elapsed="0.004936"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:30.886880" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:29.883224" elapsed="1.004242"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:29.822745" elapsed="1.065257"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:31.121419" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:30.890394" elapsed="0.231159"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:31.128315" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:31.128580" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:31.123654" elapsed="0.005015"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:32.130942" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:31.128990" elapsed="1.002386"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:30.888142" elapsed="1.243748"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:32.143943" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:32.132733" elapsed="0.011288"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:32.144483" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:32.144610" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:32.144252" elapsed="0.000394"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:33.147484" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:32.144835" elapsed="1.003685"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:32.132200" elapsed="1.017295"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:33.209443" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:33.155546" elapsed="0.054004"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:33.212617" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:33.213630" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:33.211384" elapsed="0.002669"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:34.215171" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:33.214660" elapsed="1.002760"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:33.151424" elapsed="1.066135"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:34.229501" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:34.218188" elapsed="0.011392"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:34.230266" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:34.230575" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:34.229854" elapsed="0.000794"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:35.232579" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:34.230888" elapsed="1.001947"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:34.217651" elapsed="1.015293"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:35.267380" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:35.234094" elapsed="0.034099"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:35.276839" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:35.277220" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:35.275535" elapsed="0.001801"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:36.345716" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:35.277903" elapsed="1.068223"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:35.233007" elapsed="1.113963"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:36.434918" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:36.349192" elapsed="0.086187"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:36.436575" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:36.437120" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:36.436049" elapsed="0.001211"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:37.439779" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:36.437791" elapsed="1.002616"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:36.347114" elapsed="1.093642"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:38.246167" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:37.441725" elapsed="0.804559"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:38.247357" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:38.247580" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:38.246732" elapsed="0.000922"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:39.248647" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:38.248048" elapsed="1.000792"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:37.440849" elapsed="1.808125"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:39.292720" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:39.249643" elapsed="0.043162"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:39.293233" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:39.293340" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:39.293028" elapsed="0.000354"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:40.295422" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:39.293530" elapsed="1.002085"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:39.249054" elapsed="1.046681"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:40.341084" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:40.296436" elapsed="0.044717"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:40.341579" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:40.341678" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:40.341375" elapsed="0.000339"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:41.342147" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:40.341855" elapsed="1.000505"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:40.295814" elapsed="1.046692"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:41.449455" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:41.343145" elapsed="0.106460"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:41.450289" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:41.450629" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:41.449949" elapsed="0.000734"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:42.452194" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:41.450934" elapsed="1.001543"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:41.342629" elapsed="1.109982"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:42.500645" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:42.454070" elapsed="0.047087"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:42.501935" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:42.502134" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:42.501571" elapsed="0.000732"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:43.503182" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:42.502592" elapsed="1.000786"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:42.452939" elapsed="1.050555"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:43.550761" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:43.503885" elapsed="0.046977"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:43.551444" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:43.551545" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:43.551224" elapsed="0.000354"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:44.554311" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:43.551772" elapsed="1.002780"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:43.503548" elapsed="1.051128"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:44.599891" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:44.555396" elapsed="0.044569"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:44.600355" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:44.600446" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:44.600168" elapsed="0.000310"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:45.601171" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:44.600605" elapsed="1.000862"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:44.554875" elapsed="1.046845"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:45.647138" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:45.602480" elapsed="0.044729"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:45.647650" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:45.647750" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:45.647443" elapsed="0.000340"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:46.649412" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:45.647923" elapsed="1.001722"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:45.601945" elapsed="1.047826"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:46.692190" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:46.650351" elapsed="0.041938"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:46.692887" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:46.693034" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:46.692595" elapsed="0.000492"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:47.694602" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:46.693296" elapsed="1.001507"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:46.649849" elapsed="1.045078"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:47.706219" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:47.695515" elapsed="0.010770"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:47.706693" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:47.706788" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:47.706498" elapsed="0.000324"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:48.707230" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:47.706955" elapsed="1.000486"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:47.695005" elapsed="1.012589"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:48.752120" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:48.708196" elapsed="0.044020"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:48.752726" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:48.752836" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:48.752498" elapsed="0.000372"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:49.755281" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:48.753030" elapsed="1.002492"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:48.707686" elapsed="1.047962"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:49.799499" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:49.756241" elapsed="0.043324"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:49.799954" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:49.800045" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:49.799768" elapsed="0.000309"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:50.801373" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:49.800204" elapsed="1.001367"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:49.755727" elapsed="1.045925"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:50.839806" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:50.802028" elapsed="0.037879"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:50.840374" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:50.840549" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:50.840167" elapsed="0.000415"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:51.841279" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:50.840712" elapsed="1.000720"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:50.801701" elapsed="1.039823"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:51.854412" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:51.841952" elapsed="0.012534"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:51.854926" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:51.855034" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:51.854709" elapsed="0.000358"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:52.856235" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:51.855243" elapsed="1.001233"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:51.841578" elapsed="1.015027"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:52.900793" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:52.857192" elapsed="0.043971"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:52.902039" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:52.902205" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:52.901639" elapsed="0.000605"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:53.903585" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:52.902436" elapsed="1.001344"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:52.856684" elapsed="1.047219"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:53.953356" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:53.904453" elapsed="0.048979"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:53.953885" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:53.954001" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:53.953658" elapsed="0.000378"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:54.955149" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:53.954209" elapsed="1.001135"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:53.903981" elapsed="1.051484"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:55.000453" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:54.956034" elapsed="0.044594"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:55.001490" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:55.001636" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:55.001094" elapsed="0.000606"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:56.002622" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:55.002058" elapsed="1.000797"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:54.955545" elapsed="1.047436"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:56.048838" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:56.003563" elapsed="0.045407"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:56.049560" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:56.049679" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:56.049327" elapsed="0.000386"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:57.050722" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:56.049994" elapsed="1.000865"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:56.003060" elapsed="1.047881"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:57.092236" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:57.051337" elapsed="0.041128"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:57.093285" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:57.093506" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:57.092825" elapsed="0.000784"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:58.096494" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:57.094061" elapsed="1.002665"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:57.050989" elapsed="1.045858"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:58.141752" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:58.097554" elapsed="0.044268"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:58.142252" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:58.142352" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:58.142046" elapsed="0.000341"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:07:59.143325" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:58.142526" elapsed="1.000935"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:58.097039" elapsed="1.046504"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:07:59.154931" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:07:59.143911" elapsed="0.011086"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:07:59.155394" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:07:59.155489" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:07:59.155195" elapsed="0.000326"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:00.155986" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:07:59.155650" elapsed="1.000585"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:07:59.143592" elapsed="1.012737"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:00.197283" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:00.156860" elapsed="0.040485"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:00.197787" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:00.197890" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:00.197539" elapsed="0.000383"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:01.198469" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:00.198054" elapsed="1.000702"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:00.156384" elapsed="1.042575"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:01.241604" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:01.200162" elapsed="0.041576"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:01.242469" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:01.242677" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:01.242109" elapsed="0.000720"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:02.244064" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:01.243225" elapsed="1.001484"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:01.199220" elapsed="1.045723"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:02.257060" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:02.245774" elapsed="0.011388"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:02.257782" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:02.257968" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:02.257470" elapsed="0.000556"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:03.261072" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:02.258277" elapsed="1.002991"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:02.245085" elapsed="1.016312"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:03.302028" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:03.261983" elapsed="0.040106"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:03.302468" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:03.302557" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:03.302285" elapsed="0.000302"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:04.304454" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:03.302716" elapsed="1.001998"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:03.261479" elapsed="1.043334"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:04.314828" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:04.305198" elapsed="0.009794"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:04.315628" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:04.315819" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:04.315405" elapsed="0.000451"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:05.317022" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:04.316006" elapsed="1.001206"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:04.304861" elapsed="1.012472"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:05.349607" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:05.317909" elapsed="0.031764"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:05.350080" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:05.350177" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:05.349884" elapsed="0.000335"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:06.350904" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:05.350345" elapsed="1.000752"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:05.317413" elapsed="1.033812"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:06.392660" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:06.351809" elapsed="0.040946"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:06.393331" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:06.393500" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:06.393053" elapsed="0.000501"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:07.395106" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:06.393779" elapsed="1.001525"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:06.351305" elapsed="1.044121"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:07.441020" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:07.396008" elapsed="0.045090"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:07.441508" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:07.441605" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:07.441313" elapsed="0.000326"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:08.442111" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:07.441776" elapsed="1.000559"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:07.395504" elapsed="1.046924"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:08.452851" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:08.442991" elapsed="0.009925"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:08.453327" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:08.453426" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:08.453135" elapsed="0.000323"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:09.454246" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:08.453584" elapsed="1.000902"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:08.442483" elapsed="1.012128"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:09.499009" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:09.455424" elapsed="0.043650"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:09.499494" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:09.499619" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:09.499291" elapsed="0.000401"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:10.500654" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:09.499991" elapsed="1.001260"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:09.454689" elapsed="1.046781"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:10.546662" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:10.502430" elapsed="0.044299"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:10.547140" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:10.547248" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:10.546941" elapsed="0.000340"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:11.548446" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:10.547406" elapsed="1.001232"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:10.501593" elapsed="1.047167"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:11.592096" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:11.549472" elapsed="0.042718"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:11.592759" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:11.592906" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:11.592483" elapsed="0.000476"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:12.594184" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:11.593164" elapsed="1.001264"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:11.548953" elapsed="1.045603"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:12.641486" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:12.595139" elapsed="0.046414"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:12.642146" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:12.642251" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:12.641922" elapsed="0.000366"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:13.643715" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:12.642452" elapsed="1.001506"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:12.594637" elapsed="1.049485"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:13.655537" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:13.644701" elapsed="0.010905"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:13.656044" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:13.656142" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:13.655837" elapsed="0.000340"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:14.657939" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:13.656312" elapsed="1.001825"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:13.644206" elapsed="1.014054"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:14.699194" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:14.658850" elapsed="0.040419"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:14.699680" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:14.699778" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:14.699484" elapsed="0.000329"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:15.702189" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:14.699948" elapsed="1.002480"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:14.658340" elapsed="1.044209"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:15.751657" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:15.703115" elapsed="0.048607"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:15.752155" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:15.752251" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:15.751952" elapsed="0.000332"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:16.752844" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:15.752419" elapsed="1.000619"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:15.702627" elapsed="1.050538"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:16.801072" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:16.753750" elapsed="0.047397"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:16.801630" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:16.801838" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:16.801368" elapsed="0.000585"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:17.803360" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:16.802423" elapsed="1.001305"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:16.753245" elapsed="1.050700"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:17.849428" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:17.805198" elapsed="0.044295"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:17.849883" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:17.850062" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:17.849697" elapsed="0.000401"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:18.852923" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:17.850234" elapsed="1.002928"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:17.804050" elapsed="1.049234"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:18.899051" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:18.853851" elapsed="0.045268"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:18.899524" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:18.899622" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:18.899330" elapsed="0.000327"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:19.901187" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:18.899819" elapsed="1.001566"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:18.853362" elapsed="1.048151"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:19.946341" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:19.902092" elapsed="0.044316"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:19.946866" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:19.946965" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:19.946624" elapsed="0.000377"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:20.947436" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:19.947137" elapsed="1.000563"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:19.901593" elapsed="1.046250"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:20.991414" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:20.948576" elapsed="0.042906"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:20.991896" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:20.991996" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:20.991695" elapsed="0.000335"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:21.994496" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:20.992171" elapsed="1.002524"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:20.947960" elapsed="1.046866"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:22.005961" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:21.995402" elapsed="0.010626"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:22.006438" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:22.006536" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:22.006243" elapsed="0.000328"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:23.008874" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:22.006755" elapsed="1.002316"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:21.994906" elapsed="1.014288"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:23.047993" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:23.009788" elapsed="0.038272"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:23.048486" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:23.048577" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:23.048285" elapsed="0.000324"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:24.051597" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:23.048736" elapsed="1.003071"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:23.009274" elapsed="1.042659"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:24.096685" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:24.052498" elapsed="0.044251"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:24.097152" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:24.097242" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:24.096961" elapsed="0.000313"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:25.098734" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:24.097402" elapsed="1.001555"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:24.052013" elapsed="1.047065"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:25.141672" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:25.099773" elapsed="0.041966"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:25.142155" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:25.142256" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:25.141955" elapsed="0.000335"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:26.144209" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:25.142431" elapsed="1.002038"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:25.099272" elapsed="1.045325"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:26.156012" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:26.145251" elapsed="0.010831"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:26.156512" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:26.156702" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:26.156307" elapsed="0.000449"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:27.157697" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:26.156908" elapsed="1.000992"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:26.144679" elapsed="1.013344"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:27.198547" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:27.158624" elapsed="0.039985"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:27.198995" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:27.199087" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:27.198807" elapsed="0.000313"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:28.199625" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:27.199245" elapsed="1.000590"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:27.158104" elapsed="1.041863"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:28.246251" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:28.200587" elapsed="0.045727"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:28.246697" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:28.246790" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:28.246509" elapsed="0.000312"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:29.247946" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:28.246956" elapsed="1.001182"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:28.200053" elapsed="1.048207"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:29.390703" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:29.248835" elapsed="0.141961"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:29.391386" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:29.391535" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:29.391100" elapsed="0.000487"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:30.392962" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:29.391832" elapsed="1.001470"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:29.248338" elapsed="1.145174"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:30.440996" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:30.394098" elapsed="0.046962"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:30.441451" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:30.441543" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:30.441264" elapsed="0.000311"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:31.443874" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:30.441702" elapsed="1.002411"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:30.393601" elapsed="1.050633"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:31.491819" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:31.444803" elapsed="0.047119"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:31.492552" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:31.492884" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:31.492239" elapsed="0.000707"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:32.494624" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:31.493280" elapsed="1.001541"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:31.444313" elapsed="1.050631"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:32.547791" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:32.495535" elapsed="0.052319"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:32.548311" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:32.548421" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:32.548101" elapsed="0.000352"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:33.550927" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:32.548628" elapsed="1.002492"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:32.495024" elapsed="1.056234"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:33.598566" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:33.551817" elapsed="0.046816"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:33.599049" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:33.599146" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:33.598851" elapsed="0.000332"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:34.602082" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:33.599318" elapsed="1.002961"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:33.551337" elapsed="1.051062"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:34.647278" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:34.602971" elapsed="0.044374"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:34.647771" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:34.647869" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:34.647568" elapsed="0.000336"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:35.649440" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:34.648042" elapsed="1.001604"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:34.602479" elapsed="1.047258"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:35.691648" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:35.650170" elapsed="0.041574"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:35.692334" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:35.692481" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:35.692046" elapsed="0.000487"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:36.695468" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:35.692740" elapsed="1.002962"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:35.649792" elapsed="1.046034"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:36.741281" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:36.696413" elapsed="0.044936"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:36.741762" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:36.741860" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:36.741565" elapsed="0.000330"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:37.744494" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:36.742032" elapsed="1.002703"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:36.695906" elapsed="1.048961"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:37.790356" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:37.745449" elapsed="0.045018"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:37.790948" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:37.791126" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:37.790724" elapsed="0.000858"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:38.793484" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:37.791808" elapsed="1.001983"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:37.744947" elapsed="1.048967"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:38.841877" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:38.794715" elapsed="0.047256"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:38.842556" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:38.842709" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:38.842268" elapsed="0.000495"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:39.844461" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:38.842984" elapsed="1.001676"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:38.794131" elapsed="1.050654"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:39.856114" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:39.845374" elapsed="0.010802"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:39.856550" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:39.856649" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:39.856375" elapsed="0.000307"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:40.857213" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:39.856804" elapsed="1.000563"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:39.844865" elapsed="1.012593"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:40.902829" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:40.858009" elapsed="0.044951"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:40.903650" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:40.903763" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:40.903324" elapsed="0.000471"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:41.904892" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:40.903969" elapsed="1.001137"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:40.857514" elapsed="1.047715"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:41.948503" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:41.905997" elapsed="0.042630"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:41.949376" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:41.949483" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:41.949035" elapsed="0.000485"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:42.951331" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:41.949662" elapsed="1.001857"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:41.905420" elapsed="1.046224"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:42.997297" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:42.952218" elapsed="0.045147"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:42.997783" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:42.997881" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:42.997584" elapsed="0.000332"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:43.999204" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:42.998054" elapsed="1.001437"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:42.951724" elapsed="1.047959"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:44.040430" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:44.000275" elapsed="0.040227"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:44.041036" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:44.041275" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:44.040727" elapsed="0.000624"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:45.042192" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:44.041674" elapsed="1.000665"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:43.999771" elapsed="1.042657"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:45.054188" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:45.042991" elapsed="0.011279"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:45.054675" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:45.054851" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:45.054495" elapsed="0.000390"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:46.057388" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:45.055012" elapsed="1.002512"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:45.042493" elapsed="1.015145"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:46.103533" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:46.058295" elapsed="0.045331"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:46.104111" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:46.104210" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:46.103903" elapsed="0.000339"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:47.105532" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:46.104391" elapsed="1.001336"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:46.057766" elapsed="1.048089"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:47.149400" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:47.106439" elapsed="0.043110"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:47.150086" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:47.150188" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:47.149853" elapsed="0.000369"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:48.150909" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:47.150367" elapsed="1.000839"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:47.105934" elapsed="1.045471"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:48.199518" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:48.152121" elapsed="0.047468"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:48.200030" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:48.200136" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:48.199815" elapsed="0.000354"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:49.201701" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:48.200300" elapsed="1.001680"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:48.151491" elapsed="1.050680"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:49.249478" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:49.202741" elapsed="0.046803"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:49.249959" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:49.250056" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:49.249763" elapsed="0.000327"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:50.252112" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:49.250233" elapsed="1.002207"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:49.202254" elapsed="1.050319"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:50.303845" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:50.253153" elapsed="0.050758"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:50.304329" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:50.304425" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:50.304128" elapsed="0.000329"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:51.305131" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:50.304584" elapsed="1.000768"/>
+</kw>
+<status status="PASS" start="2025-09-06T20:08:50.252654" elapsed="1.052825"/>
+</iter>
+<iter>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-09-06T20:08:51.392774" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="d8a9bbfbfb43349d1987ed6a2c9049a4", element="f.D77DC371DA5F9D513B29638DB3A523EB.d.270502D675483A8E91E6D7DA2A8E8F96.e.308")&gt;]</msg>
+<var>${results}</var>
+<arg>${RESULT_LIST}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-09-06T20:08:51.306089" elapsed="0.086753"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-09-06T20:08:51.393428" level="INFO">Length is 1.</msg>
+<msg time="2025-09-06T20:08:51.393740" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${results}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-09-06T20:08:51.393188" elapsed="0.000630"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T20:08:52.395582" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T20:08:51.394105" elapsed="1.001700"/>
+</kw>
